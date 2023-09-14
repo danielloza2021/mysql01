@@ -15,3 +15,17 @@ insert into alumno(COD_ALU,PAT_ALU,MAT_ALU,NOM_ALU,EDAD_ALU,SEXO_ALU,DIR_ALU,DIS
 values('ALU-003','CHOCANO','CASTRO','JOSE',20,'MASCULINO','AV. LOS HERALDOS 333','COMAS','jose33020@gmail.com');
 
 select * from alumno; 
+
+select cod_alu as CODIGO,pat_alu as PATERNO,mat_alu as MATERNO,
+	   nom_alu as NOMBRES,edad_alu as EDAD,sexo_alu as SEXO,
+       dir_alu as DIRECCION,dist_alu as DISTRITO,
+       correo_alu as CORREO from alumno;
+
+
+select count(*) from alumno where cod_alu='ALU-001';
+
+select count(*) from alumno where cod_alu='ALU-002';
+
+select count(*) from alumno where cod_alu='ALU-003';
+
+select count(*) from alumno where cod_alu='ALU-004';
